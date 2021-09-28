@@ -1,7 +1,7 @@
 <p align="center">
   <a><img src="https://github.com/Techsahead/ICC-Website/blob/main/Logos/ICC%20GitHub.png" width="200px"> </a>
 </p>
-<h1 align="center">ICC Website</h1>
+<h1 align="center">Infinite Clone Conspiracy</h1>
 
 **_ICC is Infinite Clone Conspiracy, an event focused on the world of Open Source is an event of [Techsahead](https://linktr.ee/techsahead)._**
 
