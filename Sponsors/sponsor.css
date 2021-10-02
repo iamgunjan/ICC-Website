@@ -1,0 +1,41 @@
+#Sponsors{
+    margin: 30px 0;
+    margin-bottom: 50px;
+}
+
+.sponsor .heading{
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+}
+.sponsor .sponsor-content{
+    font-size: 12px;
+    text-align: center;
+}
+.sponsor .sponsor-content h2{
+    line-height: 75.3px;
+    color: #fff;
+    font-size: 23px;
+    font-weight: unset;
+}
+.sponsor .btn{
+    background: #00023E;
+    box-shadow: 4px 4px 50px 5px rgba(0, 2, 62, 0.5);
+    border-radius: 10px;
+    color: white;
+    height: 55px;
+    font-size: 20px;
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    border: none;
+    cursor: pointer;
+}
+@media(max-width: 426px){
+    .sponsor img{
+        width: 150px;
+        height: 45px;
+    }
+}

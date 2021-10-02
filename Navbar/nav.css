@@ -25,6 +25,7 @@
 }
 
 .desktop-nav .menu-items {
+    margin: 0;
     display: flex;
     list-style: none;
 }
@@ -38,6 +39,7 @@
     color: var(--white-color);
     font-size: 18px;
     font-weight: 500;
+    padding: 0;
     text-shadow: 8px 8px 20px #00023e;
 }
 
@@ -108,20 +110,27 @@
     /******Sidebar******/
     .mobile-nav .sidebar {
         position: fixed;
-        top: 0;
-        left: -350px;
+        top: -400px;
+        right: 0px;
         background: linear-gradient(177.71deg, #101581 1.1%, rgba(37, 44, 193, 0.89) 25.82%, rgba(70, 76, 211, 0.91) 42.61%, rgba(34, 39, 150, 0.94) 58.37%, rgba(35, 40, 151, 0.89) 69.05%, rgba(23, 29, 142, 0.82) 82.79%, #0B1085 98.76%);
         width: 180px;
-        height: 100vh;
+        /* height: 100vh; */
         box-sizing: border-box;
-        padding: 45px 30px;
+        padding: 0;
         text-align: center;
+        margin-top: 70px;
         transition: 0.9s;
         z-index: 4;
+        background: linear-gradient(181.23deg, rgba(255, 255, 255, 0.65) 4.71%, rgba(255, 255, 255, 0.6) 112.59%);
+        box-shadow: 4px 4px 50px 1px #121212;
+        backdrop-filter: blur(4px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 20px 0px 0px 20px
     }
 
     .mobile-nav .sidebar.active {
-        left: 0;
+        top: 0;
     }
 
     .mobile-nav .sidebar ul.menu {
@@ -133,6 +142,11 @@
 
     .mobile-nav .sidebar ul.menu li {
         list-style: none;
+        border-bottom: 0.5px solid #BBBDE7;
+    }
+
+    .mobile-nav .sidebar ul.menu li:last-child{
+        border-bottom: none;
     }
 
     .mobile-nav .sidebar ul.menu li a {
@@ -140,9 +154,10 @@
         position: relative;
         text-decoration: none;
         text-transform: uppercase;
-        color: #fff;
+        color: #00023E;
         width: 100%;
-        padding: 10px 0;
+        font-weight: 550;
+        padding: 10px 25px;
         box-sizing: border-box;
         font-size: 20px;
     }

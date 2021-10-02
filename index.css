@@ -23,6 +23,10 @@
 	transition: all 0.3s ease-in-out;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 input,
 textarea,
 button,
@@ -38,6 +42,26 @@ body {
 	background: linear-gradient(171.37deg, #000232 1.81%, #0F136D 18.93%, #252AA0 32.14%, #4045C2 50.24%, #252AA0 67.85%, #0F136D 80.08%, #000232 95.74%);
 	backdrop-filter: blur(10px);
 }
+
+body::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+body::-webkit-scrollbar {
+	width: 10px;
+	background-color: #F5F5F5;
+}
+body::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+			left bottom,
+			left top,
+			color-stop(0.44, rgb(122, 153, 217)),
+			color-stop(0.72, rgb(73, 125, 189)),
+			color-stop(0.86, rgb(28, 58, 148)));
+}
+
 
 a,
 li,
@@ -114,6 +138,117 @@ button {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
+}
+
+
+/* Stats */
+.stats {
+	min-height: 150px;
+	margin: 40px 0;
+}
+
+.stats-wrapper {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.stats{
+	color: #fff;
+}
+
+.stats h1{
+	margin-bottom: 25px;
+	font-size: 50px;
+}
+
+.counter-up {
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 0 50px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.counter-up .content {
+	z-index: 1;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.counter-up .content .box {
+	width: calc(25% - 30px);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.content .box .counter {
+	font-size: 40px;
+	font-weight: 500;
+	color: #f2f2f2;
+}
+
+.content .box .text {
+	font-weight: 400;
+	color: #ccc;
+}
+
+.counter-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.counter-wrapper .plus {
+	font-size: 2rem;
+	margin-left: 1px;
+}
+
+@media screen and (max-width: 1036px) {
+	.counter-up {
+		padding: 0px 45px 0 45px;
+	}
+
+	.counter-up .content .box {
+		width: calc(50% - 30px);
+		/* margin-bottom: 50px; */
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.counter-up .content .box {
+		width: 100%;
+	}
+
+	.counter-up .content .stats-programs {
+		font-size: 12px;
+		display: none;
+	}
+
+	.content .box .counter {
+		font-size: 25px;
+	}
+
+	.content .box .text {
+		font-size: 12px;
+	}
+
+	.counter-up .content {
+		flex-wrap: wrap;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.counter-up {
+		padding: 0px 10px 0 10px;
+	}
 }
 
 @media (max-width: 980px) {
