@@ -27,44 +27,50 @@ ul {
 }
 
 .team-captain{
-    background: url('../images/image\ 26.png');
+    background: linear-gradient(to right bottom, #06094957, #22267c33, #05083d40, #090a4940),
+    url(../images/image\ 26.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .team-avengers{
-    background: url('../images/image\ 25.png');
+    background: linear-gradient(to right bottom, #2226a470, #33377e4f, #2e339052, #0a0c4538),
+    url(../images/image\ 25.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .team-wkanda{
-    background: url('../images/image\ 22.png');
+    background: linear-gradient(to right bottom, #4449da40, #33377e26, #2e339024, #1517691f),
+    url(../images/image\ 22.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .team-starforce{
-    background: url('../images/image\ 23.png');
+    background:linear-gradient(to right bottom, #131bff4f, #0c19ff33, #3640ff24, #0304274f),
+    url(../images/image\ 23.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .team-gog{
-    background: url('../images/image\ 21.png');
+    background: linear-gradient(to right bottom, #4449da40, #33377e00, #2e339000, #1517691f),
+    url(../images/image\ 21.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .team-defenders{
-    background: url('../images/image\ 27.png');
+    background-image: linear-gradient(to right bottom, #4449da40, #33377e26, #2e339024, #1517691f),
+    url(../images/image\ 27.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
 }
 
