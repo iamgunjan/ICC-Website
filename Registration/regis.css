@@ -1,0 +1,91 @@
+.register{
+    width:100%;
+    font-size: white;
+    background:linear-gradient(171.37deg, #000232 1.81%, #0F136D 18.93%, #252AA0 32.14%, #4045C2 50.24%,
+     #0d1185 67.85%, #0F136D 80.08%, #000232 95.74%), url('../images/image\ 3.png');
+    background-size:100% 100%;
+}
+.title{
+    color: white;
+    letter-spacing: 8px;
+    font-size:4em;
+    font-weight: 650;
+}
+.blocks{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:20px 0px;
+}
+
+.box h2{
+    font-size: 1.4em;
+    padding:5px;
+    font-weight: 700;
+}
+.box p{
+    font-size: 0.9rem;
+    color: rgb(16, 16, 122);
+    line-height: 18px;
+    font-weight: 500;
+}
+.box h4{
+    font-weight: 500;
+}
+.box h2, .box p, .box h4{
+    text-align:center;
+}
+.content{
+    background-color: rgb(247, 249, 255);
+    height: 70%;
+    padding: 5px 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    align-items: center;
+}
+.content-2 p{
+    padding: 0px 15px;
+}
+.box{
+    width: 16rem;
+    height: fit-content;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 50px inherit;
+}
+.box-2{
+    margin: 50px 150px;
+}
+.button{
+    height: 30%;
+    padding: 15px 0px;
+    color: white;   
+    background:linear-gradient( rgb(20, 20, 143),rgb(12, 12, 99), rgb(9, 9, 75));
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+@media only screen and (max-width:1000px) {
+    .box-2{
+        margin: 50px 10px;
+    }
+}
+
+@media only screen and (max-width:790px) {
+    .registers{
+        background-position: center;
+    }
+    .blocks{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .box{
+        align-self: center;
+    }
+    .title{
+        font-size: 2.9rem;
+        letter-spacing:5px;
+    }
+}
+
