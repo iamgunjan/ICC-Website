@@ -19,7 +19,7 @@
     font-weight: unset;
 }
 .sponsor .btn{
-    background: #00023E;
+    background: #1d228f85;
     box-shadow: 4px 4px 50px 5px rgba(0, 2, 62, 0.5);
     border-radius: 10px;
     color: white;
@@ -32,6 +32,10 @@
     display: block;
     border: none;
     cursor: pointer;
+}
+.sponsor .btn:hover{
+    background: #16195ee6;
+    color: #dddbdb;
 }
 @media(max-width: 426px){
     .sponsor img{
